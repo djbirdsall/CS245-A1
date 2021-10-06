@@ -17,7 +17,7 @@ public class MergeSort {
         return left;
     }
     public double[] get_right(double[] arr){
-        int size = arr.length - arr.length/2; //rest of prices!
+        int size = arr.length - arr.length/2; //rest of array!
         double[] right = new double[size];
         for (int i = 0; i < size; i++) {
             right[i] = arr[arr.length/2 + i]; //filling!

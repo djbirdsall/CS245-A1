@@ -12,7 +12,7 @@ public class MyClass {
         SelectionSort s = new SelectionSort();
         BubbleSort b = new BubbleSort();
         InsertionSort is = new InsertionSort();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) { //filling copies of arrays for each sorting algorithm
             int tester = 50000+i*50000;
             double[] merge = new double[tester];
             double[] quick = new double[tester];
@@ -28,7 +28,7 @@ public class MyClass {
                 insert[j] = value;
             }
             long time = System.currentTimeMillis();
-            m.sort(merge);
+            m.sort(merge); //sort, print, repeat
             System.out.println("Run time of Merge Sort: "+(System.currentTimeMillis()-time));
             time = System.currentTimeMillis();
             q.sort(quick);
